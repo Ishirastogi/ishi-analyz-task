@@ -1,0 +1,52 @@
+.page-con {
+    display: grid;
+    grid-template-rows: 70px auto 50px;
+    height: 100vh;
+}
+
+.main-con {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+.heading {
+    margin: 3rem;
+    font-size: 3rem;
+}
+
+.my_ticket {
+    font-size: 1.6rem;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 96rem;
+    transform: scale(2);
+}
+
+.data div {
+    background-color: #DADADA;
+}
+
+.starIcon {
+    color: #949494;
+}
+
+.coloredStar {
+    color: #FFC632;
+}
+
+.inProgess {
+    background: #5CDB95 !important;
+    border-radius: 0.5rem;
+}
+
+.onHold {
+    background: #05386B !important;
+    border-radius: 0.5rem;
+}
+
+.closed {
+    background: #494949 !important;
+    border-radius: 0.5rem;
+}

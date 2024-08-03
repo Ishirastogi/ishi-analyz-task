@@ -5,10 +5,6 @@ import Graph from "./Graph/Graph";
 import Team from "./Team/Team";
 import Feedback from "./Feedback/Feedback";
 
-
-
-
-
 export default function OthersDashboard() {
   return (
     <div className="dashboard-con">

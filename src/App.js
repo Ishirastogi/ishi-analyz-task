@@ -6,7 +6,9 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
 import Home from "./pages/Home/Home";
-
+import NewTicket from "./pages/NewTicket/NewTicket";
+import MyTicket from "./pages/MyTicket/MyTicket";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const { user } = useContext(Context);
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/forget-password" element={<ForgetPassword />} />
           <Route path="/dashboard" element={user ? <Home /> : <Login />} />
+          <Route path="/new-ticket" element={<NewTicket />} />
+          <Route path="/my-ticket" element={<MyTicket />} />
         </Routes>
       </Router>
     </>

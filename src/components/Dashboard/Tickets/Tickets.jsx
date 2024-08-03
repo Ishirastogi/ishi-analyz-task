@@ -1,13 +1,9 @@
 import { tickets } from "../../../data/data";
 import "./Tickets.css";
 
-
-
-
-
 export default function Tickets({ gridArea }) {
   const getTicketTitle = (ticketStatus) => {
-    switch(ticketStatus) {
+    switch (ticketStatus) {
       case "total":
         return "Total Tickets";
       case "solved":
@@ -21,7 +17,7 @@ export default function Tickets({ gridArea }) {
     }
   };
   const getTicketColor = (ticketStatus) => {
-    switch(ticketStatus) {
+    switch (ticketStatus) {
       case "total":
         return "#3066BE";
       case "solved":
@@ -35,16 +31,18 @@ export default function Tickets({ gridArea }) {
     }
   };
 
-
-
-  
-
   return (
-    <div className="dashboard-tickets-con" style={{gridArea: gridArea}}>
-      {tickets.map(ticket => {
+    <div className="dashboard-tickets-con" style={{ gridArea: gridArea }}>
+      {tickets.map((ticket) => {
         return (
-          <div key={ticket.status} className="dashboard-ticket" style={{background: getTicketColor(ticket.status)}}>
-            <div className="dashboard-ticket-title">{getTicketTitle(ticket.status)}</div>
+          <div
+            key={ticket.status}
+            className="dashboard-ticket"
+            style={{ background: getTicketColor(ticket.status) }}
+          >
+            <div className="dashboard-ticket-title">
+              {getTicketTitle(ticket.status)}
+            </div>
             <div className="dashboard-ticket-count">{ticket.count}</div>
           </div>
         );

@@ -9,13 +9,8 @@ import Footer from "../../components/Footer/Footer";
 import UserDashboard from "../../components/Dashboard/UserDashboard";
 import OthersDashboard from "../../components/Dashboard/OthersDashboard";
 
-
-
-
-
 export default function Home() {
   const { user } = useContext(Context);
-
   return (
     <div className="page-con">
       <Navbar />
