@@ -25,22 +25,19 @@ export default function Login() {
     <div className="login-page-con">
       <div className="login-con">
         <div className="login-title">Helpdesk System</div>
+        <p>Hint: Username is "admin" and Password is "admin"</p>
         <form className="login-form" onSubmit={handleSubmit}>
           <input
             type="text"
             className="login-input"
             placeholder="Username"
             ref={userRef}
-            value={"admin"}
-            readOnly
           />
           <input
             type="password"
             className="login-input"
             placeholder="Password"
             ref={passwordRef}
-            value={"admin"}
-            readOnly
           />
           <button className="login-btn" disabled={isFetching}>
             Sign In
